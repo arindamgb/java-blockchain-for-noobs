@@ -67,7 +67,7 @@ public class Main {
         // block.nonce = 0;
         while (true) {
             String hash = HashGenerator.generateSHA256Hash(block);
-            if(hash.startsWith("0")) {
+            if(hash.startsWith("0000")) {
                 System.out.println("Trying nonce value: " + block.nonce + " Hash: " + hash);
                 // Set the hash in block object to avoid re-calculation later
                 block.setHash(hash);
